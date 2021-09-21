@@ -1,5 +1,4 @@
-export const BASE_URL = 'http://192.168.1.24:1337'; //TODO
-
+export const BASE_URL = "https://jeremy-capeau-back-j354g.ondigitalocean.app";
 export const fetchDataFromAPI = async (
   apiEndpoint,
   defaultObject,
@@ -10,7 +9,7 @@ export const fetchDataFromAPI = async (
   try {
     data = await res.json();
   } catch (error) {
-    console.log('Unable to fetch data for ', apiEndpoint);
+    console.log("Unable to fetch data for ", apiEndpoint);
   }
 
   if (!data) {
