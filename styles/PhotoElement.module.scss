@@ -1,0 +1,44 @@
+@import 'constants.scss';
+
+.main {
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .PhotoElementContainerMobile {
+    display: none;
+  }
+  .PhotoElementContainer {
+    display: flex;
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    img {
+      position: relative;
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .PhotoElementContainer {
+      display: none;
+    }
+    .PhotoElementContainerMobile {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,201 @@
+@import 'constants.scss';
+
+.articleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1vw;
+  margin: 1vw 0;
+  background-color: $grey-light;
+  border-radius: 0.5vw;
+  .imageContainer {
+    img {
+      width: 8vw;
+      height: 8vw;
+      object-fit: cover;
+      border-radius: 0.5vw;
+    }
+  }
+  .textContainer {
+    width: 60%;
+    padding: 0 1%;
+    h3 {
+      font-family: $nav-font;
+      color: $text-color;
+      font-weight: 500;
+      margin: 0;
+      font-size: 0.9vw;
+    }
+    p {
+      margin: 1vw 0;
+      line-height: 0.8vw;
+      font-family: $nav-font;
+      font-weight: 300;
+      font-size: 0.8vw;
+    }
+
+    .quantityWrapper {
+      margin: 1vw 0;
+      p {
+        margin: 0;
+      }
+      .quantityHandler {
+        display: flex;
+        p {
+          background-color: $primaryColor;
+          padding: 1vw 1vw;
+          margin: 0.5vw 0.5vw 0 0;
+          font-size: 1vw;
+          border-radius: 0.5vw;
+          font-weight: bold;
+          font-family: $nav-font;
+          transition: all 0.2s;
+
+          &:nth-child(2) {
+            background-color: $grey-medium;
+          }
+          &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .handlerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .deleteTxt {
+      text-decoration: underline;
+      color: $grey-dark;
+      font-weight: 700;
+      font-family: $nav-font;
+      font-size: 0.8vw;
+    }
+    p {
+      font-size: 0.8vw;
+      margin: 0.8vw 0;
+      font-weight: 700;
+      font-family: $nav-font;
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+    .promotedContainer {
+      display: flex;
+      align-items: center;
+      .normalPrice {
+        text-decoration: line-through;
+        font-size: 0.8vw;
+        font-weight: 700;
+        font-family: $nav-font;
+      }
+      .promotedPrice {
+        color: $dangerColor;
+        font-size: 0.8vw;
+        font-weight: 700;
+        font-family: $nav-font;
+        margin: 0 0.4vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .articleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4vw;
+    margin: 4vw 0;
+    background-color: $grey-light;
+    border-radius: 2vw;
+    .imageContainer {
+      width: 30%;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 2vw;
+      }
+    }
+    .textContainer {
+      width: 60%;
+      padding: 0 5%;
+      h3 {
+        font-family: $nav-font;
+        color: $text-color;
+        font-weight: 500;
+        margin: 0;
+        font-size: 4.5vw;
+      }
+      p {
+        margin: 1vw 0;
+        line-height: 4vw;
+        font-family: $nav-font;
+        font-weight: 300;
+        font-size: 3.6vw;
+      }
+
+      .quantityWrapper {
+        margin: 2vw 0;
+        p {
+          margin: 0;
+        }
+        .quantityHandler {
+          display: flex;
+          p {
+            background-color: $primaryColor;
+            padding: 3vw 4vw;
+            margin: 1vw 1vw 0 0;
+            font-size: 4vw;
+            border-radius: 1vw;
+            font-weight: bold;
+            font-family: $nav-font;
+
+            &:nth-child(2) {
+              background-color: $grey-medium;
+            }
+          }
+        }
+      }
+    }
+    .handlerContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .deleteTxt {
+        text-decoration: underline;
+        color: $grey-dark;
+        font-weight: 700;
+        font-family: $nav-font;
+        font-size: 4vw;
+      }
+      p {
+        font-size: 4vw;
+        font-weight: 700;
+        font-family: $nav-font;
+      }
+      .promotedContainer {
+        display: flex;
+        align-items: center;
+        .normalPrice {
+          text-decoration: line-through;
+          font-size: 4vw;
+          font-weight: 700;
+          font-family: $nav-font;
+        }
+        .promotedPrice {
+          color: $dangerColor;
+          font-size: 4vw;
+          font-weight: 700;
+          font-family: $nav-font;
+          margin: 0 2vw;
+        }
+      }
+    }
+  }
+}

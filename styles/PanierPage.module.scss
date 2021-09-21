@@ -1,0 +1,224 @@
+@import 'constants.scss';
+@import 'SharedStyles.scss';
+
+.main {
+  margin-top: 3%;
+  margin-bottom: 10%;
+  .cartContainer {
+    border-top: 1px dashed $grey-light;
+    background-color: $grey-medium;
+    border-bottom: 1px dashed $grey-light;
+
+    h4 {
+      text-align: center;
+      font-family: $nav-font;
+      padding: 1vw 0;
+      font-size: 0.8vw;
+      font-weight: 300;
+    }
+  }
+  .articleContainer {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    padding: 2vw 0;
+    color: $text-color;
+  }
+
+  .codePromoContainer {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.5vw auto;
+    h3 {
+      width: 100%;
+      margin-left: 1vw;
+      font-size: 0.8vw;
+      font-weight: 700;
+      text-align: left;
+      text-transform: none;
+    }
+    button {
+      width: 10%;
+      margin: 0 0 0 0.5vw;
+    }
+    input {
+      background-color: white;
+      width: 40%;
+      margin: 0;
+      padding: 1.2vw 2%;
+    }
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .codePromoWrapper {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 2%;
+    border-left: 0.5vw solid $primaryColor;
+    p {
+      font-size: 0.8vw;
+      font-family: $nav-font;
+      width: 90%;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+
+  .priceDetailsContainer {
+    width: 50%;
+    margin: 2vw auto;
+    border-top: 1px solid $grey-dark;
+    border-bottom: 1px solid $grey-dark;
+    p {
+      text-align: right;
+      width: 100%;
+      font-family: $nav-font;
+      font-weight: 300;
+      font-size: 0.8vw;
+      margin: 0.5vw 0;
+      &:nth-child(5) {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .payContainer {
+    width: 40%;
+    margin: 0.3vw auto;
+
+    button {
+      background-color: $primaryColor;
+      color: $grey-dark;
+      font-family: $title-font;
+      font-size: 1vw;
+      padding: 1.5vw 0;
+      margin: 0.5vw 0 2vw;
+      font-weight: bold;
+      -webkit-box-shadow: -1px 0px 14px 5px rgba(82, 146, 98, 0.3);
+      box-shadow: -1px 0px 14px 5px rgba(111, 165, 120, 0.3);
+      transition: all 0.2s;
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin-top: 15%;
+    .cartContainer {
+      border-top: 1px dashed $grey-light;
+      background-color: $grey-medium;
+      border-bottom: 1px dashed $grey-light;
+
+      h4 {
+        text-align: center;
+        font-family: $nav-font;
+        padding: 5vw 0;
+        font-size: 4vw;
+        font-weight: 300;
+      }
+    }
+    .articleContainer {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      padding: 11vw 0;
+      color: $text-color;
+    }
+
+    .codePromoContainer {
+      display: flex;
+      width: 90%;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 6vw auto;
+      h3 {
+        width: 100%;
+        margin-left: 2vw;
+        font-size: 4vw;
+        font-weight: 700;
+        text-align: left;
+        text-transform: none;
+      }
+      button {
+        width: 20%;
+        margin-left: 2vw;
+        margin: 0 0 0 2vw;
+      }
+      input {
+        background-color: white;
+        width: 67.5%;
+        margin: 0;
+        padding: 5vw 5%;
+      }
+      p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .codePromoWrapper {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      width: 90%;
+      padding: 5%;
+      border-left: 2vw solid $primaryColor;
+      p {
+        font-size: 4vw;
+        font-family: $nav-font;
+        width: 80%;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+
+    .priceDetailsContainer {
+      width: 90%;
+      margin: 4vw auto;
+      border-top: 1px solid $grey-dark;
+      border-bottom: 1px solid $grey-dark;
+      p {
+        text-align: right;
+        width: 100%;
+        font-family: $nav-font;
+        font-weight: 300;
+        font-size: 4vw;
+        margin: 3vw 0;
+        &:nth-child(5) {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .payContainer {
+      width: 90%;
+      margin: 4vw auto;
+
+      button {
+        background-color: $primaryColor;
+        color: $grey-dark;
+        font-family: $title-font;
+        font-size: 4.5vw;
+        padding: 7vw 0;
+        font-weight: bold;
+        -webkit-box-shadow: -1px 0px 14px 5px rgba(82, 146, 98, 0.3);
+        box-shadow: -1px 0px 14px 5px rgba(111, 165, 120, 0.3);
+      }
+    }
+  }
+}

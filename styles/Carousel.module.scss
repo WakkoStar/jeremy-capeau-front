@@ -1,0 +1,44 @@
+.carouselContainer {
+  opacity: 0;
+  margin-left: -5%;
+}
+
+.carouselContainerSelected {
+  opacity: 1;
+  margin-left: 0%;
+}
+
+.carouselContainer,
+.carouselContainerSelected {
+  overflow: hidden;
+  transition: all 0.5s;
+  display: flex;
+  width: auto;
+  height: 100%;
+  justify-content: flex-start;
+  z-index: -1;
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .carouselContainer,
+  .carouselContainerSelected {
+    overflow: hidden;
+    display: flex;
+    width: auto;
+    height: 95vh;
+    justify-content: flex-start;
+    z-index: -1;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+    }
+  }
+}

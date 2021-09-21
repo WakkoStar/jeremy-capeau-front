@@ -1,0 +1,77 @@
+@import 'constants.scss';
+
+.main {
+  width: 30%;
+  margin: 3% auto 0;
+  h2 {
+    font-size: 1.2vw;
+    text-align: center;
+    font-family: $title-font;
+    color: $text-color;
+    margin: 0;
+    text-transform: capitalize;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1vw;
+    line-height: 1.5vw;
+    width: 90%;
+    margin: 0.8vw auto;
+    font-family: $nav-font;
+    font-weight: 300;
+  }
+  .TitleContainer {
+    display: flex;
+    align-items: flex-end;
+    width: 90%;
+    margin: 1vw auto;
+    h2 {
+      width: 50%;
+    }
+    img {
+      width: 15vw;
+      height: 15vw;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    margin-top: 30%;
+    h2 {
+      font-size: 6vw;
+      text-align: center;
+      font-family: $title-font;
+      color: $text-color;
+      margin: 0;
+      text-transform: capitalize;
+      width: 100%;
+    }
+
+    p {
+      font-size: 5vw;
+      line-height: 8vw;
+      width: 90%;
+      margin: 4vw auto;
+      font-family: $nav-font;
+      font-weight: 300;
+    }
+    .TitleContainer {
+      display: flex;
+      align-items: flex-end;
+      width: 90%;
+      margin: 4vw auto;
+      h2 {
+        width: 50%;
+      }
+      img {
+        width: 50vw;
+        height: 50vw;
+        object-fit: cover;
+      }
+    }
+  }
+}

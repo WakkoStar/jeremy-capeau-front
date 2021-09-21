@@ -1,0 +1,416 @@
+@import 'constants.scss';
+
+.main {
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .displayerContainer {
+    max-height: 60vh;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    img {
+      width: 100%;
+      max-height: 80%;
+      object-fit: contain;
+    }
+    .displays {
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      display: flex;
+      height: 25%;
+
+      div {
+        margin: 1% 0 1% 1%;
+        width: 5vw;
+        height: 100%;
+        transition: all 0.2s;
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+        img {
+          height: 5vw;
+          width: 5vw;
+          object-fit: cover;
+        }
+        &:last-child {
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+  .mainInfosContainer {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 1.5vw;
+      text-transform: uppercase;
+      font-family: $title-font;
+      color: $text-color;
+      margin: 0;
+      padding: 1.5vw 0;
+    }
+
+    .sizeSelectorLabel {
+      margin: 0;
+      font-size: 0.8vw;
+      font-family: $nav-font;
+      font-weight: 500;
+    }
+    .sizeSelector {
+      display: flex;
+      width: 100%;
+      height: 5vw;
+      overflow-x: scroll;
+
+      .notSelected,
+      .selected {
+        border: 1px solid rgb(37, 219, 158);
+        display: flex;
+        min-width: 20%;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw;
+        margin: 0.5vw;
+        transition: all 0.2s;
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+        p {
+          margin: 0;
+          font-size: 0.8vw;
+          font-weight: 500;
+          font-family: $nav-font;
+        }
+      }
+
+      .selected {
+        background-color: $primaryColor;
+      }
+    }
+
+    button {
+      color: $text-color;
+      background-color: $primaryColor;
+      border: 0;
+      font-size: 0.8vw;
+      font-family: $nav-font;
+      font-weight: bold;
+      padding: 3% 0;
+      margin-top: 2vw;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s;
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      p {
+        margin: 0 0.2vw;
+      }
+      .promotedValue {
+        font-size: 1.3vw;
+        font-weight: 500;
+        color: $grey-dark;
+        text-decoration: line-through;
+      }
+      &:disabled {
+        background-color: $grey-medium;
+        color: $grey-dark;
+      }
+    }
+
+    .detailsContainer {
+      width: 90%;
+      transition: all 0.2s;
+      background-color: $grey-dark;
+      margin: 0.5vw 0 1vw 0;
+      p {
+        margin: 0.5vw 0;
+        text-align: center;
+        font-size: 1vw;
+        color: $primaryColor;
+        font-weight: 500;
+      }
+    }
+    .detailsDangerContainer {
+      transition: all 0.2s;
+      width: 90%;
+      background-color: $dangerColor;
+      margin: 0.5vw 0 1vw 0;
+      p {
+        margin: 0.5vw 0;
+        text-align: center;
+        font-size: 1vw;
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .productInfoContainer {
+    background-color: $grey-light;
+    padding: 3vw 0;
+    width: 50%;
+    padding: 0 25%;
+    p {
+      font-size: 1vw;
+      line-height: 1.8vw;
+      font-family: $nav-font;
+      font-weight: 300;
+      width: 90%;
+      margin: 1vw auto;
+    }
+
+    .detailsText {
+      font-size: 0.8vw;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-size: 1.5vw;
+      line-height: 2vw;
+      color: $text-color;
+      width: 90%;
+      font-family: $nav-font;
+      margin: 1vw auto;
+    }
+  }
+
+  .productsContainer {
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-size: 2vw;
+      padding: 2vw 0;
+      font-family: $title-font;
+      color: $text-color;
+      margin: 0;
+    }
+    h3 {
+      font-size: 3.6vw;
+      text-transform: uppercase;
+      font-family: $nav-font;
+      color: $text-color;
+      font-weight: 500;
+      margin: 2vw 0;
+    }
+    .productsWrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    margin-top: 15%;
+
+    .displayerContainer {
+      max-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        max-height: 86%;
+        object-fit: contain;
+      }
+      .displays {
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        height: 30%;
+        div {
+          margin: 2% 0 2% 2%;
+          width: 20vw;
+          height: 100%;
+          img {
+            height: 20vw;
+            width: 20vw;
+            object-fit: cover;
+          }
+          &:last-child {
+            margin: 2%;
+          }
+        }
+      }
+    }
+    .mainInfosContainer {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+
+      h2 {
+        font-size: 6vw;
+        text-transform: uppercase;
+        font-family: $title-font;
+        color: $text-color;
+        margin: 0;
+        padding: 5vw 0;
+      }
+
+      .sizeSelectorLabel {
+        margin: 0vw 0 2vw 0;
+        font-size: 3.5vw;
+        font-family: $nav-font;
+        font-weight: 500;
+      }
+      .sizeSelector {
+        display: flex;
+        width: 100%;
+        height: 15vw;
+        overflow-x: scroll;
+
+        .notSelected,
+        .selected {
+          border: 1px solid rgb(37, 219, 158);
+          display: flex;
+          min-width: 30%;
+          align-items: center;
+          justify-content: center;
+          padding: 0 2vw;
+          margin: 2vw;
+          p {
+            margin: 0;
+            font-size: 4vw;
+            font-weight: 500;
+            font-family: $nav-font;
+          }
+        }
+
+        .selected {
+          background-color: $primaryColor;
+        }
+      }
+
+      button {
+        color: $text-color;
+        background-color: $primaryColor;
+        border: 0;
+        font-size: 4.5vw;
+        font-family: $nav-font;
+        font-weight: bold;
+        padding: 5% 0;
+        margin-top: 5vw;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          margin: 0 1vw;
+        }
+        .promotedValue {
+          font-size: 4.5vw;
+          font-weight: 500;
+          color: $grey-dark;
+          text-decoration: line-through;
+        }
+        &:disabled {
+          background-color: $grey-medium;
+          color: $grey-dark;
+        }
+      }
+
+      .detailsContainer {
+        width: 90%;
+        transition: all 0.2s;
+        background-color: $grey-dark;
+        margin: 2vw 0 4vw 0;
+        p {
+          margin: 2vw 0;
+          text-align: center;
+          font-size: 4vw;
+          color: $primaryColor;
+          font-weight: 500;
+        }
+      }
+      .detailsDangerContainer {
+        transition: all 0.2s;
+        width: 90%;
+        background-color: $dangerColor;
+        margin: 2vw 0 4vw 0;
+        p {
+          margin: 2vw 0;
+          text-align: center;
+          color: white;
+          font-size: 4vw;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .productInfoContainer {
+      background-color: $grey-light;
+      padding: 5vw 0;
+      width: 100%;
+      p {
+        font-size: 4.5vw;
+        line-height: 7vw;
+        font-family: $nav-font;
+        font-weight: 300;
+        width: 90%;
+        margin: 4vw auto;
+      }
+
+      .detailsText {
+        font-size: 3vw;
+        font-weight: 300;
+      }
+
+      h3 {
+        font-size: 6vw;
+        line-height: 4vw;
+        color: $text-color;
+        width: 90%;
+        font-family: $nav-font;
+        margin: 4vw auto;
+      }
+    }
+
+    .productsContainer {
+      padding: 6vw 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-size: 8vw;
+        padding: 5vw 0;
+        font-family: $title-font;
+        color: $text-color;
+        margin: 0;
+      }
+      h3 {
+        font-size: 3.6vw;
+        text-transform: uppercase;
+        font-family: $nav-font;
+        color: $text-color;
+        font-weight: 500;
+        margin: 2vw 0;
+      }
+      .productsWrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

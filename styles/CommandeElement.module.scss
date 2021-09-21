@@ -1,0 +1,76 @@
+@import 'constants.scss';
+@import 'sharedStyles.scss';
+
+.commandeContainer {
+  width: 40%;
+  border: 1px dashed $grey-medium;
+  background-color: $grey-light;
+  margin: 1vw;
+  padding: 1% 2%;
+
+  h3 {
+    font-size: 0.9vw;
+    margin: 0.8vw 0;
+    text-transform: none;
+    font-weight: 700;
+  }
+  .adresseWrapper {
+    margin: 0.8vw 0;
+  }
+  h4 {
+    margin: 0;
+    font-size: 0.8vw;
+    font-family: $nav-font;
+    font-weight: 500;
+  }
+  p {
+    margin: 0.2vw 0;
+    font-size: 0.8vw;
+    font-weight: 300;
+    font-family: $nav-font;
+  }
+
+  .productWrapper {
+    margin: 0.8vw 0;
+    border-left: 5px solid $primaryColor;
+    padding-left: 0.8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .commandeContainer {
+    width: 90%;
+    border: 1px dashed $grey-medium;
+    background-color: $grey-light;
+    margin-bottom: 5vw;
+    padding: 5%;
+
+    h3 {
+      font-size: 4.5vw;
+      margin: 4vw 0;
+      text-transform: none;
+      font-weight: 700;
+    }
+    .adresseWrapper {
+      margin: 4vw 0;
+    }
+    h4 {
+      margin: 0;
+      font-size: 4vw;
+      font-family: $nav-font;
+      font-weight: 500;
+    }
+    p {
+      margin: 1vw 0;
+      font-size: 4vw;
+      font-weight: 300;
+      font-family: $nav-font;
+    }
+
+    .productWrapper {
+      margin: 4vw 0;
+      border-left: 5px solid $primaryColor;
+      padding-left: 5vw;
+    }
+  }
+}

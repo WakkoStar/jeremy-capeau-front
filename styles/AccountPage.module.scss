@@ -1,0 +1,206 @@
+@import 'constants.scss';
+@import 'sharedStyles.scss';
+
+.main {
+  width: 100%;
+  margin-top: 3%;
+
+  h2 {
+    padding: 1vw 0;
+  }
+  .container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 25%;
+  }
+  .address,
+  .selectedAddress {
+    transition: all 0.5s;
+    border: 1px solid $grey-medium;
+    margin: 1vw 0;
+    padding: 1vw 1vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    p {
+      margin: 0.2vw 0;
+      font-size: 1vw;
+      font-family: $nav-font;
+      font-weight: 300;
+    }
+    h4 {
+      margin: 1vw 0;
+      font-size: 0.8vw;
+      font-family: $nav-font;
+      font-weight: 300;
+    }
+    .adressWrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      button {
+        width: 2.5vw;
+        height: 2.5vw;
+        padding: 0;
+        margin: 0.2vw 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+
+  .selectedAddress {
+    transition: all 0.5s;
+    background-color: $primaryColor;
+  }
+
+  .selected {
+    transition: all 0.2s;
+    background-color: rgb(58, 58, 58);
+  }
+
+  .newAdressContainer {
+    margin: 1vw 0;
+  }
+
+  .notificationText {
+    font-size: 2vw;
+    width: 200%;
+    padding: 2vw 2%;
+    font-family: $nav-font;
+    font-weight: 300;
+  }
+
+  .suceedContainer {
+    width: 50%;
+    margin: 0 auto 2vw;
+    padding: 0 1% 1.5%;
+    border: 1px $grey-light dashed;
+
+    h3 {
+      margin: 0.8vw 0;
+      font-size: 0.8vw;
+    }
+    p {
+      margin: 0 0 1vw 0;
+      font-size: 0.8vw;
+      line-height: 1vw;
+      font-family: $nav-font;
+      font-weight: 300;
+    }
+  }
+  .commandContainer {
+    width: 40%;
+    margin: 1vw auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    margin-top: 20%;
+
+    h2 {
+      padding: 5vw 0 0 0;
+    }
+    .container {
+      width: 90%;
+      padding: 5%;
+    }
+    .commandContainer {
+      width: 90%;
+      margin: 5vw auto;
+    }
+
+    .address,
+    .selectedAddress {
+      transition: all 0.5s;
+      border: 1px solid $grey-medium;
+      margin: 3vw 0;
+      padding: 5vw 5vw;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      p {
+        margin: 1vw 0;
+        font-size: 4vw;
+        font-family: $nav-font;
+        font-weight: 300;
+      }
+      h4 {
+        margin: 1vw 0;
+        font-size: 4vw;
+        font-family: $nav-font;
+        font-weight: 300;
+      }
+      .adressWrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        button {
+          width: 10vw;
+          height: 10vw;
+          padding: 0;
+          margin: 1vw 0;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          transition: all 0.2s;
+          &:hover {
+            background-color: $primaryColor;
+            color: $text-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .selectedAddress {
+      transition: all 0.5s;
+      background-color: $primaryColor;
+    }
+
+    .selected {
+      transition: all 0.2s;
+      background-color: rgb(58, 58, 58);
+    }
+
+    .newAdressContainer {
+      margin: 5vw 0;
+    }
+
+    .notificationText {
+      font-size: 4vw;
+      width: 90%;
+      background-color: $grey-light;
+      padding: 5vw 5%;
+      font-family: $nav-font;
+      font-weight: 300;
+    }
+
+    .suceedContainer {
+      width: 80%;
+      margin: 0 auto 10vw;
+      padding: 0 5% 7%;
+      border: 1px $grey-light dashed;
+
+      h3 {
+        margin: 3vw 0;
+        font-size: 4vw;
+      }
+      p {
+        margin: 0 0 5vw 0;
+        font-size: 4vw;
+        line-height: 5vw;
+        font-family: $nav-font;
+        font-weight: 300;
+      }
+    }
+  }
+}
