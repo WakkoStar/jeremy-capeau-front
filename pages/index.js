@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import Sponsor from '../components/Sponsor';
-import Carousel from '../components/Carousel';
-import Layout from '../components/Layout';
-import styles from '../styles/Home.module.scss';
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import Sponsor from "../components/Sponsor";
+import Carousel from "../components/Carousel";
+import Layout from "../components/Layout";
+import styles from "../styles/Home.module.scss";
 
-import Product from '../components/Product';
-import { BASE_URL, fetchDataFromAPI } from '../utils/dataFetcher';
+import Product from "../components/Product";
+import { BASE_URL, fetchDataFromAPI } from "../utils/dataFetcher";
 
 export default function Home({
   caroussel_texts,
@@ -34,7 +34,7 @@ export default function Home({
               ))}
             </div>
           </div>
-          <Link href={`${BASE_URL}${brochure.url}`} passHref>
+          <Link href={`${BASE_URL}${brochure?.url || ""}`} passHref>
             <div className={styles.brochureContainer}>
               <h2>Télécharger la brochure ici</h2>
             </div>
@@ -85,13 +85,13 @@ export async function getStaticProps(context) {
     caroussel_texts: [],
     carrousel: [],
     brochure: {
-      url: '',
+      url: "",
     },
     photos: [],
     produits: [],
     sponsors: [],
   };
-  const data = await fetchDataFromAPI('/home-page', initialState);
+  const data = await fetchDataFromAPI("/home-page", initialState);
 
   return {
     props: { ...data }, // will be passed to the page component as props

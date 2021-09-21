@@ -55,10 +55,10 @@ export default function Layout({ children }) {
           </div>
         </div>
         <div className={styles.brandContainer}>
-          <Link href={instagramLink} passHref>
+          <Link href={instagramLink || ""} passHref>
             <Image src={InstaPic} />
           </Link>
-          <Link href={facebookLink} passHref>
+          <Link href={facebookLink || ""} passHref>
             <Image src={FacebookPic} />
           </Link>
         </div>
