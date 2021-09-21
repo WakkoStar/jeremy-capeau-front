@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/apropos": "pages/apropos.js",
+  "/contact": "pages/contact.html",
+  "/": "pages/index.js",
+  "/photographe/[id]": "pages/photographe/[id].js",
+  "/photographe": "pages/photographe.js",
+  "/videaste": "pages/videaste.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
