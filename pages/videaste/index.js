@@ -11,6 +11,9 @@ export default function VideoPage({
   video_partie_principale,
   videos_partie_secondaire,
 }) {
+  const img = require('../../assets/logos/play.png').default.src;
+  console.log(img)
+  
   const VideoPart = ({ src, link, text = '' }) => {
     return (
       <div className={styles.videoPart}>
@@ -19,7 +22,7 @@ export default function VideoPage({
             <div className={styles.linkPreview}>
               <div className={styles.floatingDiv}>
                 <img
-                  src={`${BASE_URL}/uploads/play_b0f166a220.png`}
+                  src={img}
                   alt='play'
                 />
               </div>
