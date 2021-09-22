@@ -58,7 +58,7 @@ export default function ContactPage() {
         />
         <button onClick={sendMail}>Envoyer</button>
         <ReCAPTCHA
-          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+          sitekey="6LfmBYQcAAAAAGJagMDoXIKxvMB6bcWgyUZAKnn3"
           onChange={() => setIsHuman(true)}
         />
       </main>
