@@ -56,7 +56,7 @@ export default function Product({ data, src, title, id }) {
 
   //TODO change url
   return (
-    <Link href={`/boutique/${id}`} passHref>
+    <Link href={`https://archivs.fr/${id}`} passHref>
       <div className={styles.productContainer}>
         {tag !== "" && <h4>{tag}</h4>}
         <Image
