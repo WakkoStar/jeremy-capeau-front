@@ -15,14 +15,14 @@ export default function PhotoElement({ images }) {
             reverseScroll={true}
             className={styles.scrollHorizontal}
           >
-            {images.map(({ url, id, name }) => (
+            {images?.map(({ url, id, name }) => (
               <img src={`${url}`} key={id} alt={name} />
             ))}
           </HorizontalScroll>
         </div>
 
         <div className={styles.PhotoElementContainerMobile}>
-          {images.map(({ url, id, name }) => (
+          {images?.map(({ url, id, name }) => (
             <img src={`${url}`} key={id} alt={name} />
           ))}
         </div>

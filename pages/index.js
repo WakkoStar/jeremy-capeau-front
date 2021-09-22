@@ -23,13 +23,13 @@ export default function Home({
       <main className={styles.main}>
         <div className={styles.carouselContainer}>
           <Carousel
-            imageUrls={carrousel.map(({ url }) => `${url}`)}
+            imageUrls={carrousel?.map(({ url }) => `${url}`)}
           />
         </div>
         <div className={styles.textContainer}>
           <div className={styles.carouselTextContainer}>
             <div>
-              {caroussel_texts.map(({ categorie, id }) => (
+              {caroussel_texts?.map(({ categorie, id }) => (
                 <h2 key={id}>{categorie}</h2>
               ))}
             </div>
@@ -44,33 +44,33 @@ export default function Home({
           <h2>Boutique Archiv&apos;s</h2>
           <h3>Les nouveautés</h3>
           <div className={styles.productsWrapper}>
-            {produits.map(
+            {produits?.map(
               ({ id, nouveau, stock, apercu, type_de_produit, nom }) => (
                 <Product
                   id={id}
                   key={id}
                   data={{ nouveau, stock, type_de_produit }}
                   title={nom}
-                  src={`${apercu.url}`}
+                  src={`${apercu?.url}`}
                 />
               )
             )}
           </div>
         </div>
         <div className={styles.imagesContainer}>
-          {photos.map(({ url, id, name }) => (
+          {photos?.map(({ url, id, name }) => (
             <img key={id} src={`${url}`} alt={name} />
           ))}
         </div>
         <div className={styles.sponsorContainer}>
           <h2>Ils m&apos;ont fait confiance</h2>
           <div className={styles.sponsorWrapper}>
-            {sponsors.map(({ id, titre, description, logo }) => (
+            {sponsors?.map(({ id, titre, description, logo }) => (
               <Sponsor
                 key={id}
                 title={titre}
                 description={description}
-                src={`${logo.url}`}
+                src={`${logo?.url}`}
               />
             ))}
           </div>

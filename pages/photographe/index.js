@@ -21,10 +21,10 @@ export default function PhotoPage({ photos }) {
     <Layout>
       <main className={styles.main}>
         {photos &&
-          photos.map(({ slug, id, categorie, miniature }) => (
+          photos?.map(({ slug, id, categorie, miniature }) => (
             <PhotoPart
               key={id}
-              src={`${miniature.url}`}
+              src={`${miniature?.url}`}
               link={'/photographe/' + id}
               text={categorie}
             />

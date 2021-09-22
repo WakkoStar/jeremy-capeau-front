@@ -41,7 +41,7 @@ export default function VideoPage({
         <div className={styles.mainPartContainer}>
           <h2>{titre_partie_principale}</h2>
           <VideoPart
-            src={`${video_partie_principale.miniature.url}`}
+            src={`${video_partie_principale?.miniature?.url}`}
             link={video_partie_principale.video_link}
             text={video_partie_principale.description}
           />
@@ -53,7 +53,7 @@ export default function VideoPage({
             ({ miniature, description, id, video_link }) => (
               <VideoPart
                 key={id}
-                src={`${miniature.url}`}
+                src={`${miniature?.url}`}
                 text={description}
                 link={video_link}
               />

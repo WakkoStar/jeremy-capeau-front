@@ -54,7 +54,6 @@ export default function Product({ data, src, title, id }) {
   const tag = setTag();
   const priceObject = setPrice();
 
-  //TODO change url
   return (
     <Link href={`https://archivs.fr/${id}`} passHref>
       <div className={styles.productContainer}>
