@@ -37,7 +37,7 @@ export async function getStaticPaths() {
     paths: photos.map(({ id }) => ({
       params: { id: id.toString() },
     })),
-    fallback: false,
+    fallback: 'blocking',
   };
 }
 
