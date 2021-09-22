@@ -8,7 +8,7 @@ export default function AproposPage({ photo, description }) {
     <Layout>
       <main className={styles.main}>
         <div className={styles.TitleContainer}>
-          <img src={`${BASE_URL}${photo.url}`} alt={photo.name} />
+          <img src={`${photo.url}`} alt={photo.name} />
           <h2>à propos</h2>
         </div>
         <p>{description}</p>

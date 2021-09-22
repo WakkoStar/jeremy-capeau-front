@@ -23,7 +23,7 @@ export default function Home({
       <main className={styles.main}>
         <div className={styles.carouselContainer}>
           <Carousel
-            imageUrls={carrousel.map(({ url }) => `${BASE_URL}${url}`)}
+            imageUrls={carrousel.map(({ url }) => `${url}`)}
           />
         </div>
         <div className={styles.textContainer}>
@@ -34,7 +34,7 @@ export default function Home({
               ))}
             </div>
           </div>
-          <Link href={`${BASE_URL}${brochure?.url || ""}`} passHref>
+          <Link href={`${brochure?.url || ""}`} passHref>
             <div className={styles.brochureContainer}>
               <h2>Télécharger la brochure ici</h2>
             </div>
@@ -51,7 +51,7 @@ export default function Home({
                   key={id}
                   data={{ nouveau, stock, type_de_produit }}
                   title={nom}
-                  src={`${BASE_URL}${apercu.url}`}
+                  src={`${apercu.url}`}
                 />
               )
             )}
@@ -59,7 +59,7 @@ export default function Home({
         </div>
         <div className={styles.imagesContainer}>
           {photos.map(({ url, id, name }) => (
-            <img key={id} src={`${BASE_URL}${url}`} alt={name} />
+            <img key={id} src={`${url}`} alt={name} />
           ))}
         </div>
         <div className={styles.sponsorContainer}>
@@ -70,7 +70,7 @@ export default function Home({
                 key={id}
                 title={titre}
                 description={description}
-                src={`${BASE_URL}${logo.url}`}
+                src={`${logo.url}`}
               />
             ))}
           </div>

@@ -24,7 +24,7 @@ export default function PhotoPage({ photos }) {
           photos.map(({ slug, id, categorie, miniature }) => (
             <PhotoPart
               key={id}
-              src={`${BASE_URL}${miniature.url}`}
+              src={`${miniature.url}`}
               link={'/photographe/' + id}
               text={categorie}
             />

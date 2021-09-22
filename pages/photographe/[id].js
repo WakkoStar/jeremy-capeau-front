@@ -16,14 +16,14 @@ export default function PhotoElement({ images }) {
             className={styles.scrollHorizontal}
           >
             {images.map(({ url, id, name }) => (
-              <img src={`${BASE_URL}${url}`} key={id} alt={name} />
+              <img src={`${url}`} key={id} alt={name} />
             ))}
           </HorizontalScroll>
         </div>
 
         <div className={styles.PhotoElementContainerMobile}>
           {images.map(({ url, id, name }) => (
-            <img src={`${BASE_URL}${url}`} key={id} alt={name} />
+            <img src={`${url}`} key={id} alt={name} />
           ))}
         </div>
       </main>
