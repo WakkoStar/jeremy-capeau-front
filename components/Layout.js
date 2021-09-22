@@ -46,20 +46,20 @@ export default function Layout({ children }) {
       <footer className={styles.footer}>
         <div className={styles.coordContainer}>
           <div>
-            <Image src={MailPic} />
+            <Image src={MailPic} alt="mail"/>
             <p>{mail}</p>
           </div>
           <div>
-            <Image src={TelPic} />
+            <Image src={TelPic} alt="telephone"/>
             <p>{tel}</p>
           </div>
         </div>
         <div className={styles.brandContainer}>
           <Link href={instagramLink || ""} passHref>
-            <Image src={InstaPic} />
+            <Image src={InstaPic} alt="Instagram"/>
           </Link>
           <Link href={facebookLink || ""} passHref>
-            <Image src={FacebookPic} />
+            <Image src={FacebookPic} alt="Facebook"/>
           </Link>
         </div>
         <div className={styles.endContainer}>

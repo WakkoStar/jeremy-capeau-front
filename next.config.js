@@ -1,4 +1,6 @@
 module.exports = {
   reactStrictMode: true,
-  image: {},
+  image: {
+    domains: ['jeremy-capeau-back-j354g.ondigitalocean.app'],
+  },
 };

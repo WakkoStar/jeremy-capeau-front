@@ -41,7 +41,7 @@ export default function Home({
           </Link>
         </div>
         <div className={styles.productsContainer}>
-          <h2>Boutique Archiv's</h2>
+          <h2>Boutique Archiv&apos;s</h2>
           <h3>Les nouveautés</h3>
           <div className={styles.productsWrapper}>
             {produits.map(
@@ -63,7 +63,7 @@ export default function Home({
           ))}
         </div>
         <div className={styles.sponsorContainer}>
-          <h2>Ils m'ont fait confiance</h2>
+          <h2>Ils m&apos;ont fait confiance</h2>
           <div className={styles.sponsorWrapper}>
             {sponsors.map(({ id, titre, description, logo }) => (
               <Sponsor

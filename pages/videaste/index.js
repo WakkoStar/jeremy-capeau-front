@@ -23,7 +23,7 @@ export default function VideoPage({
                   alt='play'
                 />
               </div>
-              <img src={src} />
+              <img src={src} alt="video"/>
             </div>
           </a>
         </Link>

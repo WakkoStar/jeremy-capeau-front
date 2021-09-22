@@ -20,7 +20,7 @@ export default function Carousel({ imageUrls }) {
 
   return (
     <div className={styles[style]}>
-      <img src={imageUrls[index]} />
+      <img src={imageUrls[index]} alt="carousel"/>
     </div>
   );
 }
