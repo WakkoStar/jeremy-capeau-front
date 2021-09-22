@@ -28,5 +28,6 @@ export async function getStaticProps(context) {
   const aboutMe = await fetchDataFromAPI('/a-propos', initialState);
   return {
     props: { ...aboutMe },
+    revalidate: 60, 
   };
 }

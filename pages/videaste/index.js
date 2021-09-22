@@ -81,5 +81,6 @@ export async function getStaticProps(context) {
   const videoPage = await fetchDataFromAPI('/page-videos', initialState);
   return {
     props: { ...videoPage },
+    revalidate: 60, 
   };
 }

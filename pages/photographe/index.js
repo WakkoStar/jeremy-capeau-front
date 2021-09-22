@@ -38,5 +38,6 @@ export async function getStaticProps(context) {
   const photos = await fetchDataFromAPI('/photos', []);
   return {
     props: { photos },
+    revalidate: 60, 
   };
 }
