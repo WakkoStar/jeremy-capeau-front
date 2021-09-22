@@ -51,7 +51,7 @@ export default function Home({
                   key={id}
                   data={{ nouveau, stock, type_de_produit }}
                   title={nom}
-                  src={`${BASE_URL}${apercu.formats.medium.url}`}
+                  src={`${BASE_URL}${apercu.url}`}
                 />
               )
             )}
