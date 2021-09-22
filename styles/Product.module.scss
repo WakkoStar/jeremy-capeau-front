@@ -31,8 +31,8 @@
   }
   .titleText {
     margin: 0;
-    padding: 0.5vw 0;
-    width: 85%;
+    padding: 0.2vw 0;
+    width: 100%;
     font-family: $nav-font;
     align-self: center;
     font-size: 0.8vw;
@@ -41,7 +41,7 @@
   .priceDetailsText {
     margin: 0;
     padding: 0;
-    width: 85%;
+    width: 100%;
     font-weight: 300;
     font-family: $nav-font;
     align-self: center;
@@ -52,7 +52,7 @@
   .priceTextPromotion {
     margin: 0;
     padding: 0;
-    width: 85%;
+    width: 100%;
     font-family: $nav-font;
     align-self: center;
     font-weight: 500;
@@ -61,8 +61,7 @@
   .priceTextOutdated {
     text-decoration: line-through;
     width: auto;
-    font-size: 0.9vw;
-    margin-left: 1vw;
+    margin-left: 0.2vw;
   }
   .priceTextPromotion {
     color: $dangerColor;
@@ -71,7 +70,7 @@
   .promotionContainer {
     display: flex;
     justify-content: flex-start;
-    width: 85%;
+    width: 100%;
   }
 }
 
