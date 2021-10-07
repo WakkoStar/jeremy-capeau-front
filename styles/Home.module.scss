@@ -138,6 +138,33 @@
   }
 }
 
+.wip {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $primaryColor;
+  h1 {
+    font-size: 3vw;
+    width: auto;
+    line-height: 2vw;
+    margin: 0;
+    font-family: $title-font;
+    font-weight: bold;
+    color: $grey-dark;
+  }
+  h2 {
+    font-size: 1.5vw;
+    width: auto;
+    line-height: 2vw;
+    font-family: $nav-font;
+    font-weight: bold;
+    color: $grey-dark;
+  }
+}
+
 @media (max-width: 600px) {
   .container {
     width: 100%;
