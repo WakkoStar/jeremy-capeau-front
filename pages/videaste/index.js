@@ -30,7 +30,7 @@ export default function VideoPage({
             </div>
           </a>
         </Link>
-        <p>{text}</p>
+        <pre>{text}</pre>
       </div>
     );
   };

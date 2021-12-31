@@ -9,7 +9,7 @@ export default function AproposPage({ photo, description }) {
           <img src={`${photo?.url}`} alt={photo?.name} />
           <h2>à propos</h2>
         </div>
-        <p>{description}</p>
+        <pre>{description}</pre>
       </main>
     </Layout>
   );

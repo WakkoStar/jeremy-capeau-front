@@ -13,10 +13,16 @@
     width: 100%;
   }
 
-  p {
+  p, pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
     font-size: 1vw;
     line-height: 1.5vw;
     width: 90%;
+    overflow: hidden;
     margin: 0.8vw auto;
     font-family: $nav-font;
     font-weight: 300;
@@ -51,10 +57,16 @@
       width: 100%;
     }
 
-    p {
+    p, pre {
+      white-space: pre-wrap;       /* Since CSS 2.1 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
       font-size: 5vw;
       line-height: 8vw;
       width: 90%;
+      overflow: hidden;
       margin: 4vw auto;
       font-family: $nav-font;
       font-weight: 300;

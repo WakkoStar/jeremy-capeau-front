@@ -40,6 +40,7 @@
   width: 100%;
   img {
     object-fit: cover;
+    //min-height: 10vw;
     width: 100%;
     height: 100%;
     border-radius: 0.5vw;
@@ -51,7 +52,12 @@
 .mainPartContainer {
   width: 68%;
   padding: 1%;
-  p {
+  p, pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
     font-size: 1.3vw;
     line-height: 1.6vw;
     font-weight: 300;
@@ -68,7 +74,12 @@
   padding: 1%;
   justify-content: flex-start;
   align-content: stretch;
-  p {
+  p, pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
     font-size: 0.8vw;
     line-height: 1vw;
     text-transform: capitalize;
@@ -135,7 +146,12 @@
   .mainPartContainer {
     width: 90%;
     padding: 5%;
-    p {
+    p, pre {
+      white-space: pre-wrap;       /* Since CSS 2.1 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
       font-size: 5vw;
       line-height: 8vw;
       font-weight: 300;
@@ -151,7 +167,12 @@
     padding: 5%;
     justify-content: space-between;
     align-content: stretch;
-    p {
+    p, pre {
+      white-space: pre-wrap;       /* Since CSS 2.1 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
       font-size: 4vw;
       line-height: 4vw;
       font-family: $nav-font;
