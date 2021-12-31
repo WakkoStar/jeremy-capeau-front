@@ -40,7 +40,7 @@ export default function Home({
             </div>
           </Link>
         </div>
-        <div className={styles.productsContainer}>
+        {/* <div className={styles.productsContainer}>
           <h2>Boutique Archiv&apos;s</h2>
           <h3>Les nouveautés</h3>
           <div className={styles.productsWrapper}>
@@ -56,7 +56,7 @@ export default function Home({
               )
             )}
           </div>
-        </div>
+        </div> */}
         <div className={styles.imagesContainer}>
           {photos?.map(({ url, id, name }) => (
             <img key={id} src={`${url}`} alt={name} />

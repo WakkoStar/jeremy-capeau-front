@@ -5,6 +5,10 @@ export default function Carousel({ imageUrls }) {
   const [index, setIndex] = useState(0);
   const [style, setStyle] = useState('carouselContainer');
   useEffect(() => {
+    if(imageUrls.length < 2) {
+      setStyle('carouselContainerSelected')
+      return;
+    }
     const timeout = setTimeout(() => {
       setTimeout(() => {
         setTimeout(() => {
