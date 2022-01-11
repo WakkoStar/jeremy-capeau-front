@@ -34,7 +34,7 @@ export default function Home({
               ))}
             </div>
           </div>
-          <Link href={`${brochure?.url}`} passHref>
+          <Link href={`https://${brochure?.url}`} passHref>
             <div className={styles.brochureContainer}>
               <h2>Télécharger la brochure ici</h2>
             </div>
