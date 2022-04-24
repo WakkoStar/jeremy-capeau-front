@@ -22,7 +22,7 @@ export default function ContactPage() {
 
     const msg = {
       to: "jeremycapeauvp@gmail.com", // Change to your recipient
-      from: "jeremycapeauvp@gmail.com", // Change to your verified sender 
+      from: "site@jeremycapeau.fr", // Change to your verified sender 
       subject: "Nouveau message venant de jeremycapeau.fr : " + subject,
       html: "email : " + email + "<br/><br/> message : " + message,
     };
