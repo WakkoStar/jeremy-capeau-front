@@ -21,8 +21,8 @@ export default function ContactPage() {
     }
 
     const msg = {
-      to: "contact@archivs.fr", // Change to your recipient
-      from: "contact@archivs.fr", // Change to your verified sender 
+      to: "jeremycapeauvp@gmail.com", // Change to your recipient
+      from: "jeremycapeauvp@gmail.com", // Change to your verified sender 
       subject: "Nouveau message venant de jeremycapeau.fr : " + subject,
       html: "email : " + email + "<br/><br/> message : " + message,
     };
