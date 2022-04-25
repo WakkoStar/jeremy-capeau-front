@@ -13,6 +13,7 @@ export default function ContactPage() {
   const sendMail = () => {
     if (!email.length || !subject.length || !message.length) {
       alert("Un des champs sont vides !");
+      return;
     }
 
     if (!isHuman) {
